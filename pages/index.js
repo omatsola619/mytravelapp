@@ -55,7 +55,7 @@ export default function Home() {
             <div className="content">
               <div className="comp">
                 <div className="logo">
-                  <img src="/logo.png" className="logo-img img-fluid" />
+                  <img src="/logo.png" className="logo-img img-fluid" alt="logo" />
                 </div>
                 <div className="title-box text-wrap">
                   <div className="up text-center text-wrap">HILTON HOTEL</div>
