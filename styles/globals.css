@@ -1,16 +1,211 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container-fluid1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.466),
+      rgba(0, 0, 0, 0.466)
+    ),
+    url("/bgimage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+  overflow-y: hidden;
+}
+navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 63px;
+}
+.time {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 5px;
+}
+.time-count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2px;
+  margin-right: 8px;
+}
+.days {
+  font-size: 0.875rem;
+}
+.time-count h2 {
+  font-size: 1.2rem;
+  color: #ffd24c;
+  font-weight: 700;
+}
+.time-count span {
+  font-size: 0.65rem;
+}
+.trips {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 2px solid white;
+}
+.bi-globe {
+  margin-right: 3px;
+}
+.content {
+  height: 388px;
+  width: 459px;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main h3 {
+  font-size: 1.25rem;
+  padding-left: 63px;
+  margin-bottom: 35px;
+}
+.date {
+  position: absolute;
+  top: 23%;
+  left: 2%;
+}
+.date ul li {
+  font-size: 0.8rem;
+  padding: 5px;
+}
+.date ul li {
+  margin-bottom: 6px;
+}
+.icons {
+  position: absolute;
+  top: 80%;
+  left: 92%;
+}
+.icons li i {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.special {
+  background-color: rgba(0, 0, 0, 0.37);
+  border-radius: 50%;
+  border: 1px solid #fdd24d;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+}
+.comp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.logo .logo-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 9999px;
+}
+.title-box {
+  width: 100%;
+  height: 80px;
+  border: 1px solid white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1px;
+}
+.title-box .up {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    Liberation Mono, Courier New, monospace;
+  font-size: 2em;
+  font-weight: 700;
+}
+.title-box .down {
+  background-color: white;
+  color: black;
+  padding: 3px 0;
+}
+.info {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.075);
+  height: auto;
+  margin-top: 3px;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.404);
+}
+.info-head {
+  font-size: 3rem;
+  padding-top: 10px;
+  font-family: ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+  font-weight: 700;
+}
+.info-button {
+  margin: 15px;
+  width: 90%;
+  background-color: #fdd24d;
+  color: black;
+  border: 2px solid black;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.info-details {
+  padding: 0 10px;
+  font-size: 0.875rem;
+}
+/*media queries for responsiveness*/
+@media screen and (max-width: 480px) {
+  .comp {
+    gap: 4px;
+    width: 99%;
+  }
+  .icons {
+    display: none;
+  }
+  .date ul li {
+    display: inline;
+  }
+  .date {
+    top: 29%;
+    left: -8%;
+    text-align: center;
+  }
+  main h3 {
+    font-size: 1.25rem;
+    padding-left: 10px;
+    margin-bottom: 40px;
+  }
+  .info {
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 3px;
+  }
+  navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 0;
+  }
+  .time {
+    padding-left: 0;
+  }
+  .right {
+    margin-top: 15px;
+  }
+  .container-fluid1{
+      height: 100%;
+      overflow-y: scroll;
+  }
 }
