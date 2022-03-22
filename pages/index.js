@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Head>
         <title>my travel app</title>
-        <meta property="keyword" content="My page title" key="title" />
+        <meta name="description" property="keyword" content="my next js travel app" key="title" />
       </Head>
       <div className="container-fluid1">
         {/*navbar starts here */}
