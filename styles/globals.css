@@ -204,8 +204,30 @@ main h3 {
   .right {
     margin-top: 15px;
   }
-  .container-fluid1{
-      height: 100%;
-      overflow-y: scroll;
+  .container-fluid1 {
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 480px) {
+  .date ul li {
+    display: inline;
+  }
+  .date {
+    top: 25%;
+    left: 4%;
+    text-align: center;
+  }
+  .icons {
+    display: none;
+  }
+}
+@media screen and (max-width: 486px) and (min-width: 376px) {
+  .date {
+    top: 23%;
+    left: -4%;
+  }
+  .icons {
+    display: none;
   }
 }

@@ -1,52 +1,26 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
+import Icons from "../components/Icons";
+import Date from "../components/Date";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>my travel app</title>
-        <meta name="description" property="keyword" content="my next js travel app" key="title" />
+        <meta
+          name="description"
+          property="keyword"
+          content="my next js travel app"
+          key="title"
+        />
       </Head>
       <div className="container-fluid1">
-        {/*navbar starts here */}
-        <navbar>
-          <div className="left">
-            <div className="days">Remaining Days to my Trip</div>
-            <div className="time">
-              <div className="time-count">
-                <h2>10</h2>
-                <span>weeks</span>
-              </div>
-              <div className="time-count">
-                <h2>06</h2>
-                <span>DAYS</span>
-              </div>
-              <div className="time-count">
-                <h2>45</h2>
-                <span>HOURS</span>
-              </div>
-              <div className="time-count">
-                <h2>25</h2>
-                <span>MINUTES</span>
-              </div>
-              <div className="time-count">
-                <h2>06</h2>
-                <span>SECONDS</span>
-              </div>
-            </div>
-          </div>
-          <div className="right">
-            <span className="trips">My Trips</span>
-            <span>
-            <i className="bi bi-globe"></i>En ($)
-            </span>
-          </div>
-        </navbar>
+        {/*navbar component*/}
+        <Navbar />
         <hr />
         {/*main content starts here */}
         <main>
@@ -55,7 +29,11 @@ export default function Home() {
             <div className="content">
               <div className="comp">
                 <div className="logo">
-                  <img src="/logo.png" className="logo-img img-fluid" alt="logo" />
+                  <img
+                    src="/logo.png"
+                    className="logo-img img-fluid"
+                    alt="logo"
+                  />
                 </div>
                 <div className="title-box text-wrap">
                   <div className="up text-center text-wrap">HILTON HOTEL</div>
@@ -75,31 +53,13 @@ export default function Home() {
                   you can do on your trip.
                 </p>
                 <div className="but text-center">
-                  <button className="info-button">
-                  Access Calendar
-                </button>
+                  <button className="info-button">Access Calendar</button>
                 </div>
-                
               </div>
             </div>
           </div>
-          <div className="date">
-            <ul style={{ listStyleType: "none" }}>
-              <li>FEB</li>
-              <li className="special">15</li>
-              <li>16</li>
-              <li>17</li>
-              <li>18</li>
-              <li>19</li>
-              <li>20</li>
-            </ul>
-          </div>
-          <div className="icons">
-            <ul style={{listStyleType: "none"}}>
-              <li><i className="fa fa-user"></i></li>
-              <li><i className="fa fa-question-circle"></i></li>
-            </ul>
-          </div>
+          <Date />
+          <Icons />
         </main>
       </div>
     </>
